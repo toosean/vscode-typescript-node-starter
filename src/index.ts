@@ -1,4 +1,4 @@
-import { helloWorld } from './app/HelloWorld';
+import { helloWorld } from './app/helloWorld';
 import * as process from 'process';
 
 export class Startup {
