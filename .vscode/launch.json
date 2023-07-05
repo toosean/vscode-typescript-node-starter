@@ -8,14 +8,12 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "protocol": "auto",
-            "program": "${workspaceRoot}/src/index.ts",
-            "preLaunchTask": "tsc",
-            "console": "integratedTerminal",
-            "sourceMaps": true,
-            "smartStep": true,
-            "outFiles": [
-                "${workspaceRoot}/dist/**/*.js"
+            "runtimeArgs": [
+              "-r",
+              "ts-node/register"
+            ],
+            "args": [
+              "${workspaceFolder}/src/index.ts"
             ]
         }
         // ,
